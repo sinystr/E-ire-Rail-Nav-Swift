@@ -1,0 +1,1153 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07683EFBC4559BCD6A05D47B /* Pods_E_ire_Rail_Nav.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27CFF00C39E93DB96B0EC38A /* Pods_E_ire_Rail_Nav.framework */; };
+		29AC2C37BC7C2DC5DC1718CA /* Pods_E_ire_Rail_Nav_E_ire_Rail_NavUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD4F6ECD37AD7D7FE6B8237 /* Pods_E_ire_Rail_Nav_E_ire_Rail_NavUITests.framework */; };
+		F81218A1746A76A7F2ABD827 /* Pods_E_ire_Rail_NavTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFA1739FDEAAFCB219533911 /* Pods_E_ire_Rail_NavTests.framework */; };
+		FECE0D2C2728659000A619B7 /* NearbyEntitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECE0D2B2728659000A619B7 /* NearbyEntitiesViewController.swift */; };
+		FECE0D31272869BC00A619B7 /* NearbyEntitiesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECE0D2E272869BC00A619B7 /* NearbyEntitiesViewController.xib */; };
+		FECE0D32272869BC00A619B7 /* NearbyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECE0D2F272869BC00A619B7 /* NearbyViewController.xib */; };
+		FECE0D3427286C6C00A619B7 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECE0D3327286C6C00A619B7 /* LocationManager.swift */; };
+		FECE0D3B2728835C00A619B7 /* NearbyEntityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECE0D3A2728835C00A619B7 /* NearbyEntityTableViewCell.swift */; };
+		FECE0D40272883AE00A619B7 /* NearbyEntitiesCategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECE0D3D272883AD00A619B7 /* NearbyEntitiesCategoryTableViewCell.xib */; };
+		FECE0D41272883AE00A619B7 /* NearbyEntityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECE0D3E272883AD00A619B7 /* NearbyEntityTableViewCell.xib */; };
+		FECE0D442728961900A619B7 /* NearbyEntitiesCategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECE0D432728961900A619B7 /* NearbyEntitiesCategoryTableViewCell.swift */; };
+		FECE0D482729C26A00A619B7 /* InternalDataManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECE0D472729C26A00A619B7 /* InternalDataManagerProtocol.swift */; };
+		FECE0D4B2729C51600A619B7 /* CoreDataIDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECE0D4A2729C51600A619B7 /* CoreDataIDM.swift */; };
+		FECE0D4E272B328500A619B7 /* NearbyInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECE0D4D272B328500A619B7 /* NearbyInteractor.swift */; };
+		FECE0D50272BD91500A619B7 /* EntityManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECE0D4F272BD91500A619B7 /* EntityManagerProtocol.swift */; };
+		FECE0D52272BDB0200A619B7 /* EntityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECE0D51272BDB0200A619B7 /* EntityManager.swift */; };
+		FECE0D57272C77A000A619B7 /* NearbyEntitiesCategoryFooterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECE0D55272C77A000A619B7 /* NearbyEntitiesCategoryFooterTableViewCell.swift */; };
+		FECE0D58272C77A000A619B7 /* NearbyEntitiesCategoryFooterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECE0D56272C77A000A619B7 /* NearbyEntitiesCategoryFooterTableViewCell.xib */; };
+		FECE0D5D272EEE6A00A619B7 /* AddRouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECE0D5B272EEE6A00A619B7 /* AddRouteViewController.swift */; };
+		FECE0D5E272EEE6A00A619B7 /* AddRouteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECE0D5C272EEE6A00A619B7 /* AddRouteViewController.xib */; };
+		FECE0D61272EEFDC00A619B7 /* AddRouteModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECE0D60272EEFDC00A619B7 /* AddRouteModuleProtocols.swift */; };
+		FECE0D64272EF36200A619B7 /* AddRouteRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECE0D63272EF36200A619B7 /* AddRouteRouter.swift */; };
+		FECE0D67272EFAA800A619B7 /* AddRouteInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECE0D66272EFAA800A619B7 /* AddRouteInteractor.swift */; };
+		FECE0D6A272EFBEE00A619B7 /* AddRoutePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECE0D69272EFBEE00A619B7 /* AddRoutePresenter.swift */; };
+		FECE0D6F2730068000A619B7 /* TrainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECE0D6E2730068000A619B7 /* TrainTableViewCell.xib */; };
+		FECE0D712730069200A619B7 /* TrainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECE0D702730069200A619B7 /* TrainTableViewCell.swift */; };
+		FECE0D73273012AF00A619B7 /* TrainsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECE0D72273012AF00A619B7 /* TrainsViewController.xib */; };
+		FECE0D75273012C700A619B7 /* TrainsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECE0D74273012C700A619B7 /* TrainsViewController.swift */; };
+		FECE0D782730135100A619B7 /* TrainsModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECE0D772730135100A619B7 /* TrainsModuleProtocols.swift */; };
+		FECE0D7B27302B6100A619B7 /* TrainsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECE0D7A27302B6100A619B7 /* TrainsRouter.swift */; };
+		FECE0D7E27302B9A00A619B7 /* TrainsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECE0D7D27302B9A00A619B7 /* TrainsPresenter.swift */; };
+		FECE0D8127303F3300A619B7 /* TrainsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECE0D8027303F3300A619B7 /* TrainsInteractor.swift */; };
+		FEF9A0992723059400005C3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF9A0982723059400005C3F /* AppDelegate.swift */; };
+		FEF9A09B2723059400005C3F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF9A09A2723059400005C3F /* SceneDelegate.swift */; };
+		FEF9A0A22723059500005C3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEF9A0A12723059500005C3F /* Assets.xcassets */; };
+		FEF9A0A52723059500005C3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEF9A0A32723059500005C3F /* LaunchScreen.storyboard */; };
+		FEF9A0B02723059500005C3F /* E_ire_Rail_NavTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF9A0AF2723059500005C3F /* E_ire_Rail_NavTests.swift */; };
+		FEF9A0BB2723059500005C3F /* E_ire_Rail_NavUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF9A0BA2723059500005C3F /* E_ire_Rail_NavUITests.swift */; };
+		FEF9A0CF27245DD400005C3F /* IrishRailway.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FEF9A0CD27245DD400005C3F /* IrishRailway.xcdatamodeld */; };
+		FEF9A1132724957E00005C3F /* NearbyProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF9A1122724957E00005C3F /* NearbyProtocols.swift */; };
+		FEF9A1162724978D00005C3F /* StationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF9A1152724978D00005C3F /* StationModel.swift */; };
+		FEF9A118272497B600005C3F /* RouteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF9A117272497B600005C3F /* RouteModel.swift */; };
+		FEF9A11A272498AF00005C3F /* TrainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF9A119272498AF00005C3F /* TrainModel.swift */; };
+		FEF9A11E2725878200005C3F /* NearbyRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF9A11D2725878200005C3F /* NearbyRouter.swift */; };
+		FEF9A12027258ACB00005C3F /* NearbyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF9A11F27258ACB00005C3F /* NearbyPresenter.swift */; };
+		FEF9A1242725AFD900005C3F /* IrishRailRemoteDataAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF9A1232725AFD900005C3F /* IrishRailRemoteDataAPI.swift */; };
+		FEF9A1262725C05E00005C3F /* RemoteDataAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF9A1252725C05E00005C3F /* RemoteDataAPI.swift */; };
+		FEF9A128272709A500005C3F /* XMLStationsParserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF9A127272709A500005C3F /* XMLStationsParserProtocol.swift */; };
+		FEF9A12C27270BAF00005C3F /* XMLStationsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF9A12B27270BAF00005C3F /* XMLStationsParser.swift */; };
+		FEF9A12E272735D900005C3F /* XMLTrainsParserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF9A12D272735D900005C3F /* XMLTrainsParserProtocol.swift */; };
+		FEF9A1302727375700005C3F /* XMLTrainsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF9A12F2727375700005C3F /* XMLTrainsParser.swift */; };
+		FEF9A13227282A9F00005C3F /* XMLTrainsStopsParserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF9A13127282A9F00005C3F /* XMLTrainsStopsParserProtocol.swift */; };
+		FEF9A13427282ADA00005C3F /* XMLTrainsStopsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF9A13327282ADA00005C3F /* XMLTrainsStopsParser.swift */; };
+		FEF9A13927285E3E00005C3F /* NearbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF9A13827285E3E00005C3F /* NearbyViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FEF9A0AC2723059500005C3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEF9A08D2723059300005C3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEF9A0942723059300005C3F;
+			remoteInfo = "E-ire-Rail-Nav";
+		};
+		FEF9A0B72723059500005C3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEF9A08D2723059300005C3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEF9A0942723059300005C3F;
+			remoteInfo = "E-ire-Rail-Nav";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04E82284BA3A0E88C274F642 /* Pods-E-ire-Rail-Nav.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-ire-Rail-Nav.debug.xcconfig"; path = "Target Support Files/Pods-E-ire-Rail-Nav/Pods-E-ire-Rail-Nav.debug.xcconfig"; sourceTree = "<group>"; };
+		27CFF00C39E93DB96B0EC38A /* Pods_E_ire_Rail_Nav.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_E_ire_Rail_Nav.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52DDD10471815FB85DC857E5 /* Pods-E-ire-Rail-NavTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-ire-Rail-NavTests.debug.xcconfig"; path = "Target Support Files/Pods-E-ire-Rail-NavTests/Pods-E-ire-Rail-NavTests.debug.xcconfig"; sourceTree = "<group>"; };
+		64523285DEBE2ADFAF892848 /* Pods-E-ire-Rail-NavTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-ire-Rail-NavTests.release.xcconfig"; path = "Target Support Files/Pods-E-ire-Rail-NavTests/Pods-E-ire-Rail-NavTests.release.xcconfig"; sourceTree = "<group>"; };
+		77F4A9C031442EF76F960DE5 /* Pods-E-ire-Rail-Nav-E-ire-Rail-NavUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-ire-Rail-Nav-E-ire-Rail-NavUITests.release.xcconfig"; path = "Target Support Files/Pods-E-ire-Rail-Nav-E-ire-Rail-NavUITests/Pods-E-ire-Rail-Nav-E-ire-Rail-NavUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8F80B6079D2ABFDF8FCE62FE /* Pods-E-ire-Rail-Nav.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-ire-Rail-Nav.release.xcconfig"; path = "Target Support Files/Pods-E-ire-Rail-Nav/Pods-E-ire-Rail-Nav.release.xcconfig"; sourceTree = "<group>"; };
+		93D3F9C1C1E3430171DE66F3 /* Pods-E-ire-Rail-Nav-E-ire-Rail-NavUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-ire-Rail-Nav-E-ire-Rail-NavUITests.debug.xcconfig"; path = "Target Support Files/Pods-E-ire-Rail-Nav-E-ire-Rail-NavUITests/Pods-E-ire-Rail-Nav-E-ire-Rail-NavUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CBD4F6ECD37AD7D7FE6B8237 /* Pods_E_ire_Rail_Nav_E_ire_Rail_NavUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_E_ire_Rail_Nav_E_ire_Rail_NavUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFA1739FDEAAFCB219533911 /* Pods_E_ire_Rail_NavTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_E_ire_Rail_NavTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FECE0D2B2728659000A619B7 /* NearbyEntitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyEntitiesViewController.swift; sourceTree = "<group>"; };
+		FECE0D2E272869BC00A619B7 /* NearbyEntitiesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NearbyEntitiesViewController.xib; sourceTree = "<group>"; };
+		FECE0D2F272869BC00A619B7 /* NearbyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NearbyViewController.xib; sourceTree = "<group>"; };
+		FECE0D3327286C6C00A619B7 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		FECE0D3A2728835C00A619B7 /* NearbyEntityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyEntityTableViewCell.swift; sourceTree = "<group>"; };
+		FECE0D3D272883AD00A619B7 /* NearbyEntitiesCategoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NearbyEntitiesCategoryTableViewCell.xib; sourceTree = "<group>"; };
+		FECE0D3E272883AD00A619B7 /* NearbyEntityTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NearbyEntityTableViewCell.xib; sourceTree = "<group>"; };
+		FECE0D432728961900A619B7 /* NearbyEntitiesCategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyEntitiesCategoryTableViewCell.swift; sourceTree = "<group>"; };
+		FECE0D472729C26A00A619B7 /* InternalDataManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalDataManagerProtocol.swift; sourceTree = "<group>"; };
+		FECE0D4A2729C51600A619B7 /* CoreDataIDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataIDM.swift; sourceTree = "<group>"; };
+		FECE0D4D272B328500A619B7 /* NearbyInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyInteractor.swift; sourceTree = "<group>"; };
+		FECE0D4F272BD91500A619B7 /* EntityManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityManagerProtocol.swift; sourceTree = "<group>"; };
+		FECE0D51272BDB0200A619B7 /* EntityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityManager.swift; sourceTree = "<group>"; };
+		FECE0D55272C77A000A619B7 /* NearbyEntitiesCategoryFooterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyEntitiesCategoryFooterTableViewCell.swift; sourceTree = "<group>"; };
+		FECE0D56272C77A000A619B7 /* NearbyEntitiesCategoryFooterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NearbyEntitiesCategoryFooterTableViewCell.xib; sourceTree = "<group>"; };
+		FECE0D5B272EEE6A00A619B7 /* AddRouteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRouteViewController.swift; sourceTree = "<group>"; };
+		FECE0D5C272EEE6A00A619B7 /* AddRouteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddRouteViewController.xib; sourceTree = "<group>"; };
+		FECE0D60272EEFDC00A619B7 /* AddRouteModuleProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRouteModuleProtocols.swift; sourceTree = "<group>"; };
+		FECE0D63272EF36200A619B7 /* AddRouteRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRouteRouter.swift; sourceTree = "<group>"; };
+		FECE0D66272EFAA800A619B7 /* AddRouteInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRouteInteractor.swift; sourceTree = "<group>"; };
+		FECE0D69272EFBEE00A619B7 /* AddRoutePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRoutePresenter.swift; sourceTree = "<group>"; };
+		FECE0D6E2730068000A619B7 /* TrainTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrainTableViewCell.xib; sourceTree = "<group>"; };
+		FECE0D702730069200A619B7 /* TrainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainTableViewCell.swift; sourceTree = "<group>"; };
+		FECE0D72273012AF00A619B7 /* TrainsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrainsViewController.xib; sourceTree = "<group>"; };
+		FECE0D74273012C700A619B7 /* TrainsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainsViewController.swift; sourceTree = "<group>"; };
+		FECE0D772730135100A619B7 /* TrainsModuleProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainsModuleProtocols.swift; sourceTree = "<group>"; };
+		FECE0D7A27302B6100A619B7 /* TrainsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainsRouter.swift; sourceTree = "<group>"; };
+		FECE0D7D27302B9A00A619B7 /* TrainsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainsPresenter.swift; sourceTree = "<group>"; };
+		FECE0D8027303F3300A619B7 /* TrainsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainsInteractor.swift; sourceTree = "<group>"; };
+		FEF9A0952723059400005C3F /* E-ire-Rail-Nav.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "E-ire-Rail-Nav.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEF9A0982723059400005C3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FEF9A09A2723059400005C3F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FEF9A0A12723059500005C3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FEF9A0A42723059500005C3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FEF9A0A62723059500005C3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEF9A0AB2723059500005C3F /* E-ire-Rail-NavTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "E-ire-Rail-NavTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEF9A0AF2723059500005C3F /* E_ire_Rail_NavTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = E_ire_Rail_NavTests.swift; sourceTree = "<group>"; };
+		FEF9A0B12723059500005C3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEF9A0B62723059500005C3F /* E-ire-Rail-NavUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "E-ire-Rail-NavUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEF9A0BA2723059500005C3F /* E_ire_Rail_NavUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = E_ire_Rail_NavUITests.swift; sourceTree = "<group>"; };
+		FEF9A0BC2723059500005C3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEF9A0CE27245DD400005C3F /* Rail.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Rail.xcdatamodel; sourceTree = "<group>"; };
+		FEF9A1122724957E00005C3F /* NearbyProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyProtocols.swift; sourceTree = "<group>"; };
+		FEF9A1152724978D00005C3F /* StationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationModel.swift; sourceTree = "<group>"; };
+		FEF9A117272497B600005C3F /* RouteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteModel.swift; sourceTree = "<group>"; };
+		FEF9A119272498AF00005C3F /* TrainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainModel.swift; sourceTree = "<group>"; };
+		FEF9A11D2725878200005C3F /* NearbyRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyRouter.swift; sourceTree = "<group>"; };
+		FEF9A11F27258ACB00005C3F /* NearbyPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyPresenter.swift; sourceTree = "<group>"; };
+		FEF9A1232725AFD900005C3F /* IrishRailRemoteDataAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IrishRailRemoteDataAPI.swift; sourceTree = "<group>"; };
+		FEF9A1252725C05E00005C3F /* RemoteDataAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataAPI.swift; sourceTree = "<group>"; };
+		FEF9A127272709A500005C3F /* XMLStationsParserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLStationsParserProtocol.swift; sourceTree = "<group>"; };
+		FEF9A12B27270BAF00005C3F /* XMLStationsParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLStationsParser.swift; sourceTree = "<group>"; };
+		FEF9A12D272735D900005C3F /* XMLTrainsParserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLTrainsParserProtocol.swift; sourceTree = "<group>"; };
+		FEF9A12F2727375700005C3F /* XMLTrainsParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLTrainsParser.swift; sourceTree = "<group>"; };
+		FEF9A13127282A9F00005C3F /* XMLTrainsStopsParserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLTrainsStopsParserProtocol.swift; sourceTree = "<group>"; };
+		FEF9A13327282ADA00005C3F /* XMLTrainsStopsParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLTrainsStopsParser.swift; sourceTree = "<group>"; };
+		FEF9A13827285E3E00005C3F /* NearbyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FEF9A0922723059300005C3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07683EFBC4559BCD6A05D47B /* Pods_E_ire_Rail_Nav.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEF9A0A82723059500005C3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F81218A1746A76A7F2ABD827 /* Pods_E_ire_Rail_NavTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEF9A0B32723059500005C3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29AC2C37BC7C2DC5DC1718CA /* Pods_E_ire_Rail_Nav_E_ire_Rail_NavUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		97E8A2DBC703DEBF90901215 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27CFF00C39E93DB96B0EC38A /* Pods_E_ire_Rail_Nav.framework */,
+				CBD4F6ECD37AD7D7FE6B8237 /* Pods_E_ire_Rail_Nav_E_ire_Rail_NavUITests.framework */,
+				CFA1739FDEAAFCB219533911 /* Pods_E_ire_Rail_NavTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA59DD682EE2F082E2988F08 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				04E82284BA3A0E88C274F642 /* Pods-E-ire-Rail-Nav.debug.xcconfig */,
+				8F80B6079D2ABFDF8FCE62FE /* Pods-E-ire-Rail-Nav.release.xcconfig */,
+				93D3F9C1C1E3430171DE66F3 /* Pods-E-ire-Rail-Nav-E-ire-Rail-NavUITests.debug.xcconfig */,
+				77F4A9C031442EF76F960DE5 /* Pods-E-ire-Rail-Nav-E-ire-Rail-NavUITests.release.xcconfig */,
+				52DDD10471815FB85DC857E5 /* Pods-E-ire-Rail-NavTests.debug.xcconfig */,
+				64523285DEBE2ADFAF892848 /* Pods-E-ire-Rail-NavTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FECE0D3C2728839900A619B7 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FECE0D3D272883AD00A619B7 /* NearbyEntitiesCategoryTableViewCell.xib */,
+				FECE0D432728961900A619B7 /* NearbyEntitiesCategoryTableViewCell.swift */,
+				FECE0D3E272883AD00A619B7 /* NearbyEntityTableViewCell.xib */,
+				FECE0D3A2728835C00A619B7 /* NearbyEntityTableViewCell.swift */,
+				FECE0D55272C77A000A619B7 /* NearbyEntitiesCategoryFooterTableViewCell.swift */,
+				FECE0D56272C77A000A619B7 /* NearbyEntitiesCategoryFooterTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FECE0D4C272B31FD00A619B7 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FECE0D4D272B328500A619B7 /* NearbyInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		FECE0D59272EEDF900A619B7 /* AddRoute */ = {
+			isa = PBXGroup;
+			children = (
+				FECE0D68272EFBD700A619B7 /* Presenter */,
+				FECE0D65272EFA9100A619B7 /* Interactor */,
+				FECE0D62272EF34B00A619B7 /* Router */,
+				FECE0D5F272EEFB000A619B7 /* Protocols */,
+				FECE0D5A272EEE5A00A619B7 /* View */,
+			);
+			path = AddRoute;
+			sourceTree = "<group>";
+		};
+		FECE0D5A272EEE5A00A619B7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FECE0D5B272EEE6A00A619B7 /* AddRouteViewController.swift */,
+				FECE0D5C272EEE6A00A619B7 /* AddRouteViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FECE0D5F272EEFB000A619B7 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FECE0D60272EEFDC00A619B7 /* AddRouteModuleProtocols.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		FECE0D62272EF34B00A619B7 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				FECE0D63272EF36200A619B7 /* AddRouteRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		FECE0D65272EFA9100A619B7 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FECE0D66272EFAA800A619B7 /* AddRouteInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		FECE0D68272EFBD700A619B7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FECE0D69272EFBEE00A619B7 /* AddRoutePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FECE0D6B2730048400A619B7 /* Trains */ = {
+			isa = PBXGroup;
+			children = (
+				FECE0D7F27303F0C00A619B7 /* Interactor */,
+				FECE0D7C27302B8D00A619B7 /* Presenter */,
+				FECE0D7927302A4400A619B7 /* Router */,
+				FECE0D762730133800A619B7 /* Protocols */,
+				FECE0D6C273004FF00A619B7 /* View */,
+			);
+			path = Trains;
+			sourceTree = "<group>";
+		};
+		FECE0D6C273004FF00A619B7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FECE0D6D2730067000A619B7 /* Cells */,
+				FECE0D72273012AF00A619B7 /* TrainsViewController.xib */,
+				FECE0D74273012C700A619B7 /* TrainsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FECE0D6D2730067000A619B7 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FECE0D6E2730068000A619B7 /* TrainTableViewCell.xib */,
+				FECE0D702730069200A619B7 /* TrainTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FECE0D762730133800A619B7 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FECE0D772730135100A619B7 /* TrainsModuleProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FECE0D7927302A4400A619B7 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				FECE0D7A27302B6100A619B7 /* TrainsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		FECE0D7C27302B8D00A619B7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FECE0D7D27302B9A00A619B7 /* TrainsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FECE0D7F27303F0C00A619B7 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FECE0D8027303F3300A619B7 /* TrainsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		FEF9A08C2723059300005C3F = {
+			isa = PBXGroup;
+			children = (
+				FEF9A0972723059400005C3F /* E-ire-Rail-Nav */,
+				FEF9A0AE2723059500005C3F /* E-ire-Rail-NavTests */,
+				FEF9A0B92723059500005C3F /* E-ire-Rail-NavUITests */,
+				FEF9A0962723059400005C3F /* Products */,
+				DA59DD682EE2F082E2988F08 /* Pods */,
+				97E8A2DBC703DEBF90901215 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FEF9A0962723059400005C3F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FEF9A0952723059400005C3F /* E-ire-Rail-Nav.app */,
+				FEF9A0AB2723059500005C3F /* E-ire-Rail-NavTests.xctest */,
+				FEF9A0B62723059500005C3F /* E-ire-Rail-NavUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FEF9A0972723059400005C3F /* E-ire-Rail-Nav */ = {
+			isa = PBXGroup;
+			children = (
+				FEF9A12927270ADA00005C3F /* Parsers */,
+				FEF9A1222725AE2300005C3F /* Protocols */,
+				FEF9A114272495B700005C3F /* Models */,
+				FEF9A1212725ADF100005C3F /* DataManagers */,
+				FEF9A0D0272481D400005C3F /* Modules */,
+				FEF9A0CD27245DD400005C3F /* IrishRailway.xcdatamodeld */,
+				FEF9A0982723059400005C3F /* AppDelegate.swift */,
+				FEF9A09A2723059400005C3F /* SceneDelegate.swift */,
+				FEF9A0A12723059500005C3F /* Assets.xcassets */,
+				FEF9A0A32723059500005C3F /* LaunchScreen.storyboard */,
+				FEF9A0A62723059500005C3F /* Info.plist */,
+			);
+			path = "E-ire-Rail-Nav";
+			sourceTree = "<group>";
+		};
+		FEF9A0AE2723059500005C3F /* E-ire-Rail-NavTests */ = {
+			isa = PBXGroup;
+			children = (
+				FEF9A0AF2723059500005C3F /* E_ire_Rail_NavTests.swift */,
+				FEF9A0B12723059500005C3F /* Info.plist */,
+			);
+			path = "E-ire-Rail-NavTests";
+			sourceTree = "<group>";
+		};
+		FEF9A0B92723059500005C3F /* E-ire-Rail-NavUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FEF9A0BA2723059500005C3F /* E_ire_Rail_NavUITests.swift */,
+				FEF9A0BC2723059500005C3F /* Info.plist */,
+			);
+			path = "E-ire-Rail-NavUITests";
+			sourceTree = "<group>";
+		};
+		FEF9A0D0272481D400005C3F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				FECE0D6B2730048400A619B7 /* Trains */,
+				FECE0D59272EEDF900A619B7 /* AddRoute */,
+				FEF9A110272494EA00005C3F /* Nearby */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		FEF9A110272494EA00005C3F /* Nearby */ = {
+			isa = PBXGroup;
+			children = (
+				FECE0D4C272B31FD00A619B7 /* Interactor */,
+				FEF9A13527285DC500005C3F /* View */,
+				FEF9A11C2725876C00005C3F /* Presenter */,
+				FEF9A11B2725875B00005C3F /* Router */,
+				FEF9A111272494F800005C3F /* Protocols */,
+			);
+			path = Nearby;
+			sourceTree = "<group>";
+		};
+		FEF9A111272494F800005C3F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FEF9A1122724957E00005C3F /* NearbyProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FEF9A114272495B700005C3F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FEF9A1152724978D00005C3F /* StationModel.swift */,
+				FEF9A117272497B600005C3F /* RouteModel.swift */,
+				FEF9A119272498AF00005C3F /* TrainModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FEF9A11B2725875B00005C3F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				FEF9A11D2725878200005C3F /* NearbyRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		FEF9A11C2725876C00005C3F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FEF9A11F27258ACB00005C3F /* NearbyPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FEF9A1212725ADF100005C3F /* DataManagers */ = {
+			isa = PBXGroup;
+			children = (
+				FEF9A1232725AFD900005C3F /* IrishRailRemoteDataAPI.swift */,
+				FECE0D3327286C6C00A619B7 /* LocationManager.swift */,
+				FECE0D4A2729C51600A619B7 /* CoreDataIDM.swift */,
+				FECE0D51272BDB0200A619B7 /* EntityManager.swift */,
+			);
+			path = DataManagers;
+			sourceTree = "<group>";
+		};
+		FEF9A1222725AE2300005C3F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FEF9A1252725C05E00005C3F /* RemoteDataAPI.swift */,
+				FECE0D472729C26A00A619B7 /* InternalDataManagerProtocol.swift */,
+				FECE0D4F272BD91500A619B7 /* EntityManagerProtocol.swift */,
+				FEF9A12A27270B2800005C3F /* Parsers */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FEF9A12927270ADA00005C3F /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				FEF9A12B27270BAF00005C3F /* XMLStationsParser.swift */,
+				FEF9A12F2727375700005C3F /* XMLTrainsParser.swift */,
+				FEF9A13327282ADA00005C3F /* XMLTrainsStopsParser.swift */,
+			);
+			path = Parsers;
+			sourceTree = "<group>";
+		};
+		FEF9A12A27270B2800005C3F /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				FEF9A127272709A500005C3F /* XMLStationsParserProtocol.swift */,
+				FEF9A12D272735D900005C3F /* XMLTrainsParserProtocol.swift */,
+				FEF9A13127282A9F00005C3F /* XMLTrainsStopsParserProtocol.swift */,
+			);
+			path = Parsers;
+			sourceTree = "<group>";
+		};
+		FEF9A13527285DC500005C3F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FEF9A13627285DF200005C3F /* ViewControllers */,
+				FEF9A13727285E0500005C3F /* Views */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FEF9A13627285DF200005C3F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FEF9A13827285E3E00005C3F /* NearbyViewController.swift */,
+				FECE0D2B2728659000A619B7 /* NearbyEntitiesViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FEF9A13727285E0500005C3F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FECE0D3C2728839900A619B7 /* Cells */,
+				FECE0D2E272869BC00A619B7 /* NearbyEntitiesViewController.xib */,
+				FECE0D2F272869BC00A619B7 /* NearbyViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FEF9A0942723059300005C3F /* E-ire-Rail-Nav */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEF9A0BF2723059500005C3F /* Build configuration list for PBXNativeTarget "E-ire-Rail-Nav" */;
+			buildPhases = (
+				B7C662651089A620853D6907 /* [CP] Check Pods Manifest.lock */,
+				FEF9A0912723059300005C3F /* Sources */,
+				FEF9A0922723059300005C3F /* Frameworks */,
+				FEF9A0932723059300005C3F /* Resources */,
+				FD598A7C52A657A012A91651 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "E-ire-Rail-Nav";
+			productName = "E-ire-Rail-Nav";
+			productReference = FEF9A0952723059400005C3F /* E-ire-Rail-Nav.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FEF9A0AA2723059500005C3F /* E-ire-Rail-NavTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEF9A0C22723059500005C3F /* Build configuration list for PBXNativeTarget "E-ire-Rail-NavTests" */;
+			buildPhases = (
+				00FD4EB8A0BD789E2480AD2E /* [CP] Check Pods Manifest.lock */,
+				FEF9A0A72723059500005C3F /* Sources */,
+				FEF9A0A82723059500005C3F /* Frameworks */,
+				FEF9A0A92723059500005C3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEF9A0AD2723059500005C3F /* PBXTargetDependency */,
+			);
+			name = "E-ire-Rail-NavTests";
+			productName = "E-ire-Rail-NavTests";
+			productReference = FEF9A0AB2723059500005C3F /* E-ire-Rail-NavTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FEF9A0B52723059500005C3F /* E-ire-Rail-NavUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEF9A0C52723059500005C3F /* Build configuration list for PBXNativeTarget "E-ire-Rail-NavUITests" */;
+			buildPhases = (
+				EB2BD0E3AF5EE9C0A3C4DF0E /* [CP] Check Pods Manifest.lock */,
+				FEF9A0B22723059500005C3F /* Sources */,
+				FEF9A0B32723059500005C3F /* Frameworks */,
+				FEF9A0B42723059500005C3F /* Resources */,
+				52091438CC883523522FCE83 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEF9A0B82723059500005C3F /* PBXTargetDependency */,
+			);
+			name = "E-ire-Rail-NavUITests";
+			productName = "E-ire-Rail-NavUITests";
+			productReference = FEF9A0B62723059500005C3F /* E-ire-Rail-NavUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FEF9A08D2723059300005C3F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					FEF9A0942723059300005C3F = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					FEF9A0AA2723059500005C3F = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = FEF9A0942723059300005C3F;
+					};
+					FEF9A0B52723059500005C3F = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = FEF9A0942723059300005C3F;
+					};
+				};
+			};
+			buildConfigurationList = FEF9A0902723059300005C3F /* Build configuration list for PBXProject "E-ire-Rail-Nav" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FEF9A08C2723059300005C3F;
+			productRefGroup = FEF9A0962723059400005C3F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FEF9A0942723059300005C3F /* E-ire-Rail-Nav */,
+				FEF9A0AA2723059500005C3F /* E-ire-Rail-NavTests */,
+				FEF9A0B52723059500005C3F /* E-ire-Rail-NavUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FEF9A0932723059300005C3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FECE0D31272869BC00A619B7 /* NearbyEntitiesViewController.xib in Resources */,
+				FECE0D73273012AF00A619B7 /* TrainsViewController.xib in Resources */,
+				FECE0D32272869BC00A619B7 /* NearbyViewController.xib in Resources */,
+				FECE0D5E272EEE6A00A619B7 /* AddRouteViewController.xib in Resources */,
+				FEF9A0A52723059500005C3F /* LaunchScreen.storyboard in Resources */,
+				FECE0D58272C77A000A619B7 /* NearbyEntitiesCategoryFooterTableViewCell.xib in Resources */,
+				FECE0D6F2730068000A619B7 /* TrainTableViewCell.xib in Resources */,
+				FEF9A0A22723059500005C3F /* Assets.xcassets in Resources */,
+				FECE0D40272883AE00A619B7 /* NearbyEntitiesCategoryTableViewCell.xib in Resources */,
+				FECE0D41272883AE00A619B7 /* NearbyEntityTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEF9A0A92723059500005C3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEF9A0B42723059500005C3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00FD4EB8A0BD789E2480AD2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-E-ire-Rail-NavTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52091438CC883523522FCE83 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-E-ire-Rail-Nav-E-ire-Rail-NavUITests/Pods-E-ire-Rail-Nav-E-ire-Rail-NavUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-E-ire-Rail-Nav-E-ire-Rail-NavUITests/Pods-E-ire-Rail-Nav-E-ire-Rail-NavUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-E-ire-Rail-Nav-E-ire-Rail-NavUITests/Pods-E-ire-Rail-Nav-E-ire-Rail-NavUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7C662651089A620853D6907 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-E-ire-Rail-Nav-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB2BD0E3AF5EE9C0A3C4DF0E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-E-ire-Rail-Nav-E-ire-Rail-NavUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD598A7C52A657A012A91651 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-E-ire-Rail-Nav/Pods-E-ire-Rail-Nav-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-E-ire-Rail-Nav/Pods-E-ire-Rail-Nav-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-E-ire-Rail-Nav/Pods-E-ire-Rail-Nav-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FEF9A0912723059300005C3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FECE0D50272BD91500A619B7 /* EntityManagerProtocol.swift in Sources */,
+				FEF9A1132724957E00005C3F /* NearbyProtocols.swift in Sources */,
+				FECE0D3B2728835C00A619B7 /* NearbyEntityTableViewCell.swift in Sources */,
+				FECE0D6A272EFBEE00A619B7 /* AddRoutePresenter.swift in Sources */,
+				FECE0D782730135100A619B7 /* TrainsModuleProtocols.swift in Sources */,
+				FECE0D75273012C700A619B7 /* TrainsViewController.swift in Sources */,
+				FECE0D2C2728659000A619B7 /* NearbyEntitiesViewController.swift in Sources */,
+				FECE0D482729C26A00A619B7 /* InternalDataManagerProtocol.swift in Sources */,
+				FEF9A11A272498AF00005C3F /* TrainModel.swift in Sources */,
+				FEF9A12027258ACB00005C3F /* NearbyPresenter.swift in Sources */,
+				FECE0D64272EF36200A619B7 /* AddRouteRouter.swift in Sources */,
+				FEF9A0CF27245DD400005C3F /* IrishRailway.xcdatamodeld in Sources */,
+				FEF9A0992723059400005C3F /* AppDelegate.swift in Sources */,
+				FEF9A11E2725878200005C3F /* NearbyRouter.swift in Sources */,
+				FECE0D712730069200A619B7 /* TrainTableViewCell.swift in Sources */,
+				FECE0D52272BDB0200A619B7 /* EntityManager.swift in Sources */,
+				FEF9A1162724978D00005C3F /* StationModel.swift in Sources */,
+				FECE0D61272EEFDC00A619B7 /* AddRouteModuleProtocols.swift in Sources */,
+				FECE0D7B27302B6100A619B7 /* TrainsRouter.swift in Sources */,
+				FEF9A118272497B600005C3F /* RouteModel.swift in Sources */,
+				FEF9A1242725AFD900005C3F /* IrishRailRemoteDataAPI.swift in Sources */,
+				FECE0D4B2729C51600A619B7 /* CoreDataIDM.swift in Sources */,
+				FEF9A13927285E3E00005C3F /* NearbyViewController.swift in Sources */,
+				FEF9A12E272735D900005C3F /* XMLTrainsParserProtocol.swift in Sources */,
+				FEF9A128272709A500005C3F /* XMLStationsParserProtocol.swift in Sources */,
+				FEF9A1262725C05E00005C3F /* RemoteDataAPI.swift in Sources */,
+				FEF9A13227282A9F00005C3F /* XMLTrainsStopsParserProtocol.swift in Sources */,
+				FEF9A12C27270BAF00005C3F /* XMLStationsParser.swift in Sources */,
+				FECE0D3427286C6C00A619B7 /* LocationManager.swift in Sources */,
+				FEF9A09B2723059400005C3F /* SceneDelegate.swift in Sources */,
+				FECE0D4E272B328500A619B7 /* NearbyInteractor.swift in Sources */,
+				FECE0D442728961900A619B7 /* NearbyEntitiesCategoryTableViewCell.swift in Sources */,
+				FECE0D67272EFAA800A619B7 /* AddRouteInteractor.swift in Sources */,
+				FEF9A1302727375700005C3F /* XMLTrainsParser.swift in Sources */,
+				FECE0D57272C77A000A619B7 /* NearbyEntitiesCategoryFooterTableViewCell.swift in Sources */,
+				FECE0D5D272EEE6A00A619B7 /* AddRouteViewController.swift in Sources */,
+				FECE0D8127303F3300A619B7 /* TrainsInteractor.swift in Sources */,
+				FEF9A13427282ADA00005C3F /* XMLTrainsStopsParser.swift in Sources */,
+				FECE0D7E27302B9A00A619B7 /* TrainsPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEF9A0A72723059500005C3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEF9A0B02723059500005C3F /* E_ire_Rail_NavTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEF9A0B22723059500005C3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEF9A0BB2723059500005C3F /* E_ire_Rail_NavUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FEF9A0AD2723059500005C3F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEF9A0942723059300005C3F /* E-ire-Rail-Nav */;
+			targetProxy = FEF9A0AC2723059500005C3F /* PBXContainerItemProxy */;
+		};
+		FEF9A0B82723059500005C3F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEF9A0942723059300005C3F /* E-ire-Rail-Nav */;
+			targetProxy = FEF9A0B72723059500005C3F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FEF9A0A32723059500005C3F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEF9A0A42723059500005C3F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FEF9A0BD2723059500005C3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FEF9A0BE2723059500005C3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FEF9A0C02723059500005C3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04E82284BA3A0E88C274F642 /* Pods-E-ire-Rail-Nav.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G9VRZ523NK;
+				INFOPLIST_FILE = "E-ire-Rail-Nav/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pokerstars.E-ire-Rail-Nav";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FEF9A0C12723059500005C3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F80B6079D2ABFDF8FCE62FE /* Pods-E-ire-Rail-Nav.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G9VRZ523NK;
+				INFOPLIST_FILE = "E-ire-Rail-Nav/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pokerstars.E-ire-Rail-Nav";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		FEF9A0C32723059500005C3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52DDD10471815FB85DC857E5 /* Pods-E-ire-Rail-NavTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G9VRZ523NK;
+				INFOPLIST_FILE = "E-ire-Rail-NavTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pokerstars.E-ire-Rail-NavTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/E-ire-Rail-Nav.app/E-ire-Rail-Nav";
+			};
+			name = Debug;
+		};
+		FEF9A0C42723059500005C3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64523285DEBE2ADFAF892848 /* Pods-E-ire-Rail-NavTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G9VRZ523NK;
+				INFOPLIST_FILE = "E-ire-Rail-NavTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pokerstars.E-ire-Rail-NavTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/E-ire-Rail-Nav.app/E-ire-Rail-Nav";
+			};
+			name = Release;
+		};
+		FEF9A0C62723059500005C3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93D3F9C1C1E3430171DE66F3 /* Pods-E-ire-Rail-Nav-E-ire-Rail-NavUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G9VRZ523NK;
+				INFOPLIST_FILE = "E-ire-Rail-NavUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pokerstars.E-ire-Rail-NavUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "E-ire-Rail-Nav";
+			};
+			name = Debug;
+		};
+		FEF9A0C72723059500005C3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77F4A9C031442EF76F960DE5 /* Pods-E-ire-Rail-Nav-E-ire-Rail-NavUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G9VRZ523NK;
+				INFOPLIST_FILE = "E-ire-Rail-NavUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pokerstars.E-ire-Rail-NavUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "E-ire-Rail-Nav";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FEF9A0902723059300005C3F /* Build configuration list for PBXProject "E-ire-Rail-Nav" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEF9A0BD2723059500005C3F /* Debug */,
+				FEF9A0BE2723059500005C3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEF9A0BF2723059500005C3F /* Build configuration list for PBXNativeTarget "E-ire-Rail-Nav" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEF9A0C02723059500005C3F /* Debug */,
+				FEF9A0C12723059500005C3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEF9A0C22723059500005C3F /* Build configuration list for PBXNativeTarget "E-ire-Rail-NavTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEF9A0C32723059500005C3F /* Debug */,
+				FEF9A0C42723059500005C3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEF9A0C52723059500005C3F /* Build configuration list for PBXNativeTarget "E-ire-Rail-NavUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEF9A0C62723059500005C3F /* Debug */,
+				FEF9A0C72723059500005C3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FEF9A0CD27245DD400005C3F /* IrishRailway.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FEF9A0CE27245DD400005C3F /* Rail.xcdatamodel */,
+			);
+			currentVersion = FEF9A0CE27245DD400005C3F /* Rail.xcdatamodel */;
+			path = IrishRailway.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FEF9A08D2723059300005C3F /* Project object */;
+}

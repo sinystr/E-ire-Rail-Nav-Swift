@@ -1,0 +1,20 @@
+PODS:
+  - FloatingPanel (2.5.0)
+  - JGProgressHUD (2.2)
+
+DEPENDENCIES:
+  - FloatingPanel
+  - JGProgressHUD
+
+SPEC REPOS:
+  trunk:
+    - FloatingPanel
+    - JGProgressHUD
+
+SPEC CHECKSUMS:
+  FloatingPanel: ddb1c8cbbacd164cfee651c449febe867a28e2cb
+  JGProgressHUD: d83d7a981b85d11205e19ff8ad5bb9c40571c847
+
+PODFILE CHECKSUM: 8ea911583328dfa86f9c3f23a5d4c47772da2ac2
+
+COCOAPODS: 1.11.2

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15508" systemVersion="18G87" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="Route" representedClassName="Route" syncable="YES" codeGenerationType="class">
+        <attribute name="bidirectional" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="station1" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Station"/>
+        <relationship name="station2" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Station"/>
+    </entity>
+    <entity name="Station" representedClassName="Station" syncable="YES" codeGenerationType="class">
+        <attribute name="code" optional="YES" attributeType="String"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="Route" positionX="336.65625" positionY="222.80078125" width="128" height="88"/>
+        <element name="Station" positionX="-63" positionY="-18" width="128" height="103"/>
+    </elements>
+</model>
