@@ -11,7 +11,7 @@ import JGProgressHUD
     var loadingIndicator:JGProgressHUD?
 
     public var presenter: NearbyPresenterProtocol!
-    private var nearbyEntitiesView: NearbyEntitiesViewProtocol?
+    private var nearbyEntitiesView: NearbyEntitiesViewProtocol!
     private var fpc: FloatingPanelController!
 
     override func viewDidLoad() {
@@ -46,7 +46,7 @@ import JGProgressHUD
     }
 
     func showNearbyMap(){
-        let location = LocationManager.getCurrentLocation()
+        let location = LocationManager.currentLocation
         let coordinateRegion = MKCoordinateRegion(center: location.coordinate,
                                                         latitudinalMeters: nearbyDistance, longitudinalMeters: nearbyDistance)
         mapView.setRegion(coordinateRegion, animated: true)
@@ -72,19 +72,19 @@ import JGProgressHUD
     // MARK: Display data methods
 
     func showNearbyRoutes(routes: [RouteModel], andStations stations: [StationModel]) {
-        nearbyEntitiesView?.showNearbyRoutes(routes: routes, andStations: stations)
+        nearbyEntitiesView.showNearbyRoutes(routes: routes, andStations: stations)
         showOnMap(stations: stations)
         showNearbyMap();
     }
 
     func showAllRoutes(routes: [RouteModel]) {
-        nearbyEntitiesView?.showAllRoutes(routes: routes)
+        nearbyEntitiesView.showAllRoutes(routes: routes)
     }
 
     func showAllStations(stations: [StationModel]) {
         showOnMap(stations: stations)
         showIrelandMap()
-        nearbyEntitiesView?.showAllStations(stations: stations)
+        nearbyEntitiesView.showAllStations(stations: stations)
     }
 
     // MARK: Actions

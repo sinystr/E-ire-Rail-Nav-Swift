@@ -9,7 +9,7 @@ import Foundation
 
 class AddRoutePresenter:AddRoutePresenterProtocol, AddRouteInteractorOutputProtocol
 {
-    weak var view:AddRouteViewProtocol!
+    unowned var view:AddRouteViewProtocol!
     var interactor:AddRouteInteractorInputProtocol
     var router:AddRouteRouterProtocol
     

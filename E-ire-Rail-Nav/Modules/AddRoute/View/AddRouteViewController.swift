@@ -4,7 +4,7 @@ import JGProgressHUD
 
 @objc class AddRouteViewController: UIViewController, AddRouteViewProtocol, UIPickerViewDelegate, UIPickerViewDataSource {
     private var stations: [StationModel]?
-    public var presenter: AddRoutePresenterProtocol?
+    public var presenter: AddRoutePresenterProtocol!
     var loadingIndicator:JGProgressHUD?
 
     @IBOutlet var toStationPickerView: UIPickerView!
@@ -16,7 +16,7 @@ import JGProgressHUD
         toStationPickerView.dataSource = self
         fromStationPickerView.delegate = self
         fromStationPickerView.dataSource = self
-        presenter?.viewDidLoad()
+        presenter.viewDidLoad()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -70,6 +70,6 @@ import JGProgressHUD
     @IBAction func addRouteButtonPressed(_ sender: Any) {
         let fromStation = stations![self.fromStationPickerView.selectedRow(inComponent: 0)].name
         let toStation = stations![self.toStationPickerView.selectedRow(inComponent: 0)].name
-        presenter?.addRouteWith(fromStation: fromStation!, toStation: toStation!, bidirectional: bidirectionalSwitch.isOn)
+        presenter.addRouteWith(fromStation: fromStation!, toStation: toStation!, bidirectional: bidirectionalSwitch.isOn)
     }
 }

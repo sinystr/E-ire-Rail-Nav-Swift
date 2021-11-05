@@ -126,7 +126,11 @@ class CoreDataIDM:InternalDataManager
                     routes.append(RouteModel(fromStation: toStationModel, toStation: fromStationModel))
                 }
             }
-            
+            if(routes.count == 0){
+                completionHandler(nil, nil)
+                return
+            }
+
             completionHandler(routes, nil)
         } catch let error {
             completionHandler(nil, error)

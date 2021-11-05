@@ -14,7 +14,7 @@ class NearbyInteractor:NearbyInteractorInputProtocol
 
     func filterStations(stations:[StationModel], within meters:Double) -> [StationModel]{
         var filteredStations = [StationModel]()
-        let currentLocation = LocationManager.getCurrentLocation()
+        let currentLocation = LocationManager.currentLocation
         for var station in stations {
             let distance = station.location!.distance(from: currentLocation)
             if(distance < meters) {
@@ -27,7 +27,7 @@ class NearbyInteractor:NearbyInteractorInputProtocol
     
     func filterRoutes(routes:[RouteModel], within meters:Double) -> [RouteModel]{
         var filteredRoutes = [RouteModel]()
-        let currentLocation = LocationManager.getCurrentLocation()
+        let currentLocation = LocationManager.currentLocation
         for var route in routes {
             let distance = route.fromStation.location!.distance(from: currentLocation)
             if(distance < meters) {
@@ -56,8 +56,13 @@ class NearbyInteractor:NearbyInteractorInputProtocol
                         return
                     }
                     let filteredStations = self.filterStations(stations: stations!, within: NearbyInteractor.nearbyDistance)
-                    let filteredRoutes = self.filterRoutes(routes: routes!, within: NearbyInteractor.nearbyDistance)
-                    self.output?.nearbyRoutesAndStationsRetrieved(stations: filteredStations, routes: filteredRoutes, error: nil)
+                    if(routes != nil){
+                        let filteredRoutes = self.filterRoutes(routes: routes!, within: NearbyInteractor.nearbyDistance)
+                        self.output?.nearbyRoutesAndStationsRetrieved(stations: filteredStations, routes: filteredRoutes, error: nil)
+                    } else {
+                        self.output?.nearbyRoutesAndStationsRetrieved(stations: filteredStations, routes: nil, error: nil)
+                    }
+                    
                 }
             }
             
@@ -68,7 +73,7 @@ class NearbyInteractor:NearbyInteractorInputProtocol
         EntityManager.sharedInstance.getAllStations { stations, error in
             DispatchQueue.main.async {
                 if var stations = stations {
-                    let currentLocation = LocationManager.getCurrentLocation()
+                    let currentLocation = LocationManager.currentLocation
                     
                     for (index, _) in stations.enumerated() {
                         stations[index].distance = stations[index].location!.distance(from: currentLocation)
@@ -86,7 +91,7 @@ class NearbyInteractor:NearbyInteractorInputProtocol
         EntityManager.sharedInstance.getAllRoutes { routes, error in
             DispatchQueue.main.async {
                 if var routes = routes {
-                    let currentLocation = LocationManager.getCurrentLocation()
+                    let currentLocation = LocationManager.currentLocation
                     
                     for (index, _) in routes.enumerated() {
                         routes[index].fromStation.distance = routes[index].fromStation.location!.distance(from: currentLocation)

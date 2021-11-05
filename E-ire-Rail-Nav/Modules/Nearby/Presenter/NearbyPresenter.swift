@@ -46,26 +46,59 @@ class NearbyPresenter:NearbyPresenterProtocol, NearbyInteractorOutputProtocol
     }
     
     func nearbyRoutesAndStationsRetrieved(stations: [StationModel]?, routes: [RouteModel]?, error: Error?) {
-        self.view.showNearbyRoutes(routes: routes!, andStations: stations!)
+        if(error != nil){
+            // Error handling
+            return
+        }
+        if(stations == nil){
+            self.view.hideLoadingIndicator()
+            return
+        }
+        if(routes == nil){
+            self.view.showNearbyRoutes(routes: [RouteModel](), andStations: sortStationByDistance(stations: stations!))
+            self.view.hideLoadingIndicator()
+            return
+        }
+
+        self.view.showNearbyRoutes(routes: routes!, andStations: sortStationByDistance(stations: stations!))
         self.view.hideLoadingIndicator()
     }
     
     func allStationsRetrieved(stations: [StationModel]?, error: Error?) {
         if(error != nil){
             print("error handling")
+            return
         }
         
-        self.view.showAllStations(stations: stations!)
+        // No stations retrieved
+        if(stations == nil){
+            self.view.hideLoadingIndicator()
+            return
+        }
+        
+        self.view.showAllStations(stations: sortStationByDistance(stations: stations!))
         self.view.hideLoadingIndicator()
     }
     
     func allRoutesRetrieved(routes: [RouteModel]?, error: Error?) {
+        if(error != nil){
+            print("error handling")
+            return
+        }
+        
+        // No routes retrieved
+        if(routes == nil){
+            self.view.showAllRoutes(routes: [RouteModel]())
+            self.view.hideLoadingIndicator()
+            return
+        }
+
         self.view.showAllRoutes(routes: routes!)
         self.view.hideLoadingIndicator()
     }
-    
-    func sortStationByName(stations:[StationModel]) -> [StationModel]
+
+    func sortStationByDistance(stations:[StationModel]) -> [StationModel]
     {
-        return stations.sorted {$0.name! < $1.name!}
+        return stations.sorted {$0.distance! < $1.distance!}
     }
 }

@@ -10,7 +10,7 @@ import CoreLocation
 
 class LocationManager
 {
-    static func getCurrentLocation() -> CLLocation {
-        CLLocation.init(latitude: 53.228430, longitude: -6.204864)
+    static var currentLocation:CLLocation {
+        return CLLocation.init(latitude: 53.228430, longitude: -6.204864)
     }
 }
