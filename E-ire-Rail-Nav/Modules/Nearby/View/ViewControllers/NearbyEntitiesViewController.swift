@@ -28,6 +28,16 @@ class NearbyEntitiesViewController:UIViewController, NearbyEntitiesViewProtocol,
         tableView.dataSource = self
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        if(stationsFullListIsShown){
+            nearbyView.showAllStationsAction()
+        }else if(routesFullListIsShown){
+            nearbyView.showAllRoutesAction()
+        }else{
+            nearbyView.showNearbyRoutesAndStationsAction()
+        }
+    }
+    
     //MARK: NearbyEntitiesViewProtocol
     func showAllRoutes(routes: [RouteModel]) {
         self.routes = routes

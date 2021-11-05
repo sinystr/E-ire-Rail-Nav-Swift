@@ -23,7 +23,6 @@ import JGProgressHUD
         fpc.set(contentViewController: nearbyEntitiesViewController)
         fpc.track(scrollView: nearbyEntitiesViewController.tableView!)
         nearbyEntitiesView = nearbyEntitiesViewController
-        presenter.showNearbyRoutesAndStationsAction()
     }
 
     override func viewWillAppear(_ animated: Bool) {
