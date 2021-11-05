@@ -17,7 +17,7 @@ class TrainsViewController:UIViewController, TrainsViewProtocol, UITableViewDele
     @IBOutlet weak var entityDistance: UILabel!
     @IBOutlet weak var trainsTableView: UITableView!
     var presenter:TrainsPresenterProtocol!
-    var trains:[TrainModel]! = [TrainModel]()
+    var trains:[TrainModel] = [TrainModel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()

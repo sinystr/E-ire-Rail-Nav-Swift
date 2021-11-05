@@ -32,18 +32,36 @@ class TrainsPresenter:TrainsPresenterProtocol, TrainsInteractorOutputProtocol
     
     func trainsRetrieved(trains: [TrainModel]?, forStation station: StationModel, error: Error?) {
         view.hideLoadingIndicator()
+        
         if(error != nil){
             // Error handling
+            return
         }
+        
+        // No trains received
+        if(trains == nil){
+            view.setupHeadlineForStation(station: station)
+            return
+        }
+        
         view.setupHeadlineForStation(station: station)
         view.showTrains(trains: trains!)
     }
     
     func trainsRetrieved(trains: [TrainModel]?, forRoute route: RouteModel, error: Error?) {
         view.hideLoadingIndicator()
+        
         if(error != nil){
             // Error handling
+            return
         }
+        
+        // No trains retrieved
+        if(trains == nil){
+            view.setupHeadlineForRoute(route: route)
+            return
+        }
+
         view.setupHeadlineForRoute(route: route)
         view.showTrains(trains: trains!)
     }

@@ -61,13 +61,13 @@ import JGProgressHUD
     }
     
     func showLoadingIndicator() {
-        self.loadingIndicator = JGProgressHUD(style: .extraLight)
-        self.loadingIndicator!.textLabel.text = "Loading"
-        self.loadingIndicator!.show(in: self.view)
+        loadingIndicator = JGProgressHUD(style: .extraLight)
+        loadingIndicator!.textLabel.text = "Loading"
+        loadingIndicator!.show(in: self.view)
     }
 
     func hideLoadingIndicator() {
-        self.loadingIndicator?.dismiss()
+        loadingIndicator?.dismiss()
     }
 
     // MARK: Display data methods
@@ -75,7 +75,7 @@ import JGProgressHUD
     func showNearbyRoutes(routes: [RouteModel], andStations stations: [StationModel]) {
         nearbyEntitiesView?.showNearbyRoutes(routes: routes, andStations: stations)
         showOnMap(stations: stations)
-        self.showNearbyMap();
+        showNearbyMap();
     }
 
     func showAllRoutes(routes: [RouteModel]) {
@@ -84,7 +84,7 @@ import JGProgressHUD
 
     func showAllStations(stations: [StationModel]) {
         showOnMap(stations: stations)
-        self.showIrelandMap()
+        showIrelandMap()
         nearbyEntitiesView?.showAllStations(stations: stations)
     }
 

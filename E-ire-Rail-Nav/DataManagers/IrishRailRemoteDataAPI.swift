@@ -9,16 +9,18 @@ import Foundation
 
 class IrishRailRemoteDataAPI:RemoteDataAPI
 {
+    static let session: URLSession = {
+            let configuration = URLSessionConfiguration.default
+            return URLSession(configuration: configuration)
+        }()
+
     func getAllStations(completionHandler:@escaping (Data?, Error?)->Void){
         let url = URL(string: "http://api.irishrail.ie/realtime/realtime.asmx/getAllStationsXML")
         
         var request = URLRequest(url: url!)
         request.httpMethod = "GET"
-
-        let config = URLSessionConfiguration.default
-        let session = URLSession(configuration: config)
         
-        let task = session.dataTask(with: request) { data, response, error in
+        let task = IrishRailRemoteDataAPI.session.dataTask(with: request) { data, response, error in
             completionHandler(data, error)
         }
 
@@ -32,11 +34,8 @@ class IrishRailRemoteDataAPI:RemoteDataAPI
         
         var request = URLRequest(url: url!)
         request.httpMethod = "GET"
-
-        let config = URLSessionConfiguration.default
-        let session = URLSession(configuration: config)
         
-        let task = session.dataTask(with: request) { data, response, error in
+        let task = IrishRailRemoteDataAPI.session.dataTask(with: request) { data, response, error in
             completionHandler(data, error)
         }
 
@@ -53,11 +52,8 @@ class IrishRailRemoteDataAPI:RemoteDataAPI
         
         var request = URLRequest(url: url!)
         request.httpMethod = "GET"
-
-        let config = URLSessionConfiguration.default
-        let session = URLSession(configuration: config)
         
-        let task = session.dataTask(with: request) { data, response, error in
+        let task = IrishRailRemoteDataAPI.session.dataTask(with: request) { data, response, error in
             completionHandler(data, error)
         }
 
