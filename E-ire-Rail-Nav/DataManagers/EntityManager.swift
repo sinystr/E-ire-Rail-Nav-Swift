@@ -99,8 +99,8 @@ class EntityManager:EntityManagerProtocol
                 return
             }
             
+            // Remote API returned empty response
             guard data != nil else {
-                // Empty data received
                 completionHandler(nil, nil)
                 return
             }

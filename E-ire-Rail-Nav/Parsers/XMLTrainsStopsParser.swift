@@ -47,12 +47,12 @@ class XMLTrainsStopsParser:NSObject, XMLTrainsStopsParserProtocol, XMLParserDele
     
     // MARK: Completion methods
     func parserDidEndDocument(_ parser: XMLParser) {
-        completionHandler!(trainStops, nil)
+        completionHandler?(trainStops, nil)
         clearState()
     }
     
     func parser(_ parser: XMLParser, parseErrorOccurred parseError: Error) {
-        completionHandler!(nil, parseError)
+        completionHandler?(nil, parseError)
         clearState()
     }
     
